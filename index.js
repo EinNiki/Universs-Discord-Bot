@@ -1,16 +1,16 @@
 const Discord = require('discord.js')
 const { fstat } = require("fs");
 const bot = new Discord.Client()
-const TOKEN = ''
-const prefix = '?'
+const TOKEN = '' // Hier dein Discord Token
+
 
 bot.on('ready', () => {
-    console.log('Der Bot ist nun Online!')
+    console.log('Der Bot ist nun Online!') //Was in der Console stehen soll
 
     bot.user.setPresence({
         activity: {
-            name: 'Universs.de',
-            type: 'PLAYING', 
+            name: 'Universs.de', //
+            type: 'PLAYING', //
         }
     })
 })
